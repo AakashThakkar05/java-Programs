@@ -7,9 +7,7 @@ class Solution {
         }
         //traverse the frequency arr and check if it is atmost 3
         for(int i=0;i < 26; i++){
-            if(Math.abs(freq[i]) >3){
-                return false;
-            }
+            if(Math.abs(freq[i]) >3) return false;
         }
         return true;
     }
