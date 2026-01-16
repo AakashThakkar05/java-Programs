@@ -18,7 +18,8 @@ class Solution {
         return ans;
     }
     public static boolean isValid(int[] arr, int upper, int k){
-        int sum = 0, sub = 1;
+        int sum = 0;
+        int sub = 1;        // atleast one subarray
         for(int num : arr){
             if(sum + num <= upper){
                 sum += num;
